@@ -1,0 +1,260 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Контактные данные</title>
+        <link rel="stylesheet" href="menustyle.css">
+        <style>
+            body{
+                background-color: rgb(40, 79, 171);
+            }
+            main {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: rgb(40, 79, 171);
+            }
+
+            h1 {
+                text-align: left;
+                color: black;
+                border-bottom: 1px solid black;
+                padding-bottom: 10px;
+                max-width: 900px;
+            }
+
+            h2 {
+                text-align: left;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+
+             .office-card {
+                background-color: white;
+                border-radius: 8px;
+                padding: 20px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                margin-bottom: 20px;
+            }
+
+            header {
+                margin-left: 50px;
+                margin-top: 10px;
+            }
+
+            .address {
+            font-weight: bold;
+            margin-bottom: 15px;
+            }
+            
+            .description {
+                font-style: italic;
+                color: #666;
+                margin-bottom: 15px;
+            }
+            
+            .contact-list {
+                list-style-type: none;
+                padding: 0;
+                margin-bottom: 15px;
+            }
+            
+            .contact-list li {
+                margin-bottom: 8px;
+                display: flex;
+                align-items: center;
+            }
+            
+            .contact-list input[type="checkbox"] {
+                margin-right: 10px;
+            }
+            
+            .transport-info {
+                margin-top: 15px;
+            }
+            
+            .transport-info p {
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            
+            .transport-list {
+                list-style-type: none;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            
+            .transport-list li {
+                background-color: #f0f0f0;
+                padding: 5px 10px;
+                border-radius: 4px;
+            }
+            
+            .working-hours {
+                margin-top: 15px;
+                font-size: 14px;
+            }
+
+             .map-container {
+                flex: 1;
+                min-width: 300px;
+                height: 435px;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            
+            .map-iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        </style>
+
+    <body>
+        <header> 
+            <div style="text-align: left;">
+                <img src="logo2.png" height="60">
+            </div>
+        </header>
+
+        <main>
+
+            <div class="menu">
+                <h1>Страницы сайта</h1>
+                <div class="spis">
+                    <ol>
+                        <li><a href="company.html">О компании</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="currency.html">Курс валют</a></li>
+                        <li style="background-color: rgb(43, 150, 226);"><a href="contacts.html">Контактные данные</a></li>
+                        <li><a href="video.html">Видео</a></li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="office-card">
+                <h1>Офисы продаж</h1>
+                
+                <div class="address">
+                    633104, Россия, Новосибирская обл., г. Обь, Аэропорт, Сектор С, касса №4
+                </div>
+                
+                <div class="description">
+                    Касса в аэропорту
+                </div>
+                
+                <ul class="contact-list">
+                    <li>
+                        <input type="checkbox" id="phone" disabled>
+                        <label for="phone">(+7 383) 216-98-99</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="email" disabled>
+                        <label for="email">ovbrpsu@aeroflot.ru</label>
+                    </li>
+                </ul>
+                
+                <div class="transport-info">
+                    <p>До аэропорта:</p>
+                    <ul class="transport-list">
+                        <li>Толмачево</li>
+                        <li>20 км.</li>
+                        <li>30 мин.</li>
+                        <li>45 мин. (автобус)</li>
+                    </ul>
+                </div>
+                
+                <div class="working-hours">
+                    Круглосуточно. Перерывы: 07:40-08:00; 10:30-10:45; 12:00-13:00; 14:00-14:15; 19:40-20:00; 01:00-03:00; 04:00-04:15.
+                    <hr>
+                </div>
+
+                <div class="address">
+                    630004, г. Новосибирск, ул. Урицкого, д. 35
+                </div>
+
+                <div class="description">
+                    Городской офис
+                </div>
+
+                <ul class="contact-list">
+                    <li>
+                        <input type="checkbox" id="phone" disabled>
+                        <label for="phone">(8-383)-3196860</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="phone" disabled>
+                        <label for="phone">(8-383)-3196861</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="phone" disabled>
+                        <label for="phone">(8-383)-3196862</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="email" disabled>
+                        <label for="email">OVBTOSU@AEROFLOT.RU</label>
+                    </li>
+                </ul>
+
+                <div class="transport-info">
+                    <p>До аэропорта:</p>
+                    <ul class="transport-list">
+                        <li>Толмачево</li>
+                        <li>20 км.</li>
+                        <li>30 мин.</li>
+                        <li>45 мин. (автобус)</li>
+                    </ul>
+                </div>
+
+                <div class="working-hours">
+                    Пн.-Вс.: 08:00-19:30; перерыв: 13:00-14:00
+                    <hr>
+                </div>
+
+                <div class="address">
+                    Аэропорт Толмачево, кассы 1-2
+                </div>
+
+                <div class="description">
+                    АО «Аэропорт Толмачево»
+                </div>
+
+                <ul class="contact-list">
+                    <li>
+                        <input type="checkbox" id="phone" disabled>
+                        <label for="phone">+7(383) 216-95-95</label>
+                    </li>
+                </ul>
+
+                <div class="transport-info">
+                    <ul class="transport-list">
+                        <li>Толмачево</li>
+                    </ul>
+                </div>
+
+                <div class="working-hours">
+                    Круглосуточно
+                    <hr>
+                </div>
+
+                <h1>Офисы продаж на карте</h1>
+
+                <div class="map-container">
+                    <iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A4cafaf4573cdde630090fb1bcd7a624c893b1dff867109517e09a928379e2b17&amp;lang=ru_RU&amp;scroll=true" frameborder="0"></iframe>
+                </div>
+
+            </div>
+           
+        </main>
+
+        <footer> 
+            
+        </footer>
+
+    </body>
+</html>
