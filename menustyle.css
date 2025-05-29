@@ -1,0 +1,55 @@
+/* Боковое меню (фиксированное положение слева) */
+div.menu {
+    width: 300px;
+    height: 100vh;
+    background: darkblue;
+    border-left: 1px solid black;
+    position: fixed;
+    right: 0;
+    top: 0;
+    overflow-y: auto;
+    z-index: 100;
+    max-width: 250px;
+}
+
+/* Заголовок бокового меню */
+div.menu h1 {
+    background: linear-gradient(to top, darkblue, rgb(136, 136, 236));
+    color: white;
+    margin: 0;
+    padding: 18px 20px;
+    font-size: 1.2em;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+/* Список в боковом меню */
+div.spis ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Элементы списка меню */
+div.spis li {
+    padding: 12px 20px;
+    border-bottom: 1px solid #f5f5f5;
+    transition: all 0.3s ease;
+}
+
+/* Эффект при наведении на пункт меню */
+div.spis li:hover {
+    background: linear-gradient(to top, rgb(105, 5, 167), rgb(214, 143, 231));
+}
+
+/* Ссылки в меню */
+div.spis a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+/* Эффект при наведении на ссылку в меню */
+div.spis li:hover a {
+    color: black;
+}
