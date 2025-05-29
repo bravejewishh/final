@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>О компании</title>
+        <link rel="stylesheet" href="menustyle.css">
         <style>
             body{
                 background-color: rgb(40, 79, 171);
@@ -53,7 +54,37 @@
                 list-style-type: circle;
             }
 
+            .scroll-top.visible {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .scroll-top:hover {
+                background-color: #078ee2;
+                color: #002d72;
+                transform: translateY(-5px);
+            }
+
         </style>
+
+        <script>
+            const scrollTopBtn = document.createElement('button');
+            scrollTopBtn.innerHTML = '↑';
+            scrollTopBtn.classList.add('scroll-top');
+            document.body.appendChild(scrollTopBtn);
+  
+            scrollTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+  
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+    </script>
         
      </head>
 
@@ -65,7 +96,22 @@
             </div>
         </header>
 
+
+
         <main>
+
+            <div class="menu">
+                <h1>Страницы сайта</h1>
+                <div class="spis">
+                    <ol>
+                        <li style="background-color: rgb(43, 150, 226);"><a href="company.html">О компании</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="currency.html">Курс валют</a></li>
+                        <li><a href="contacts.html">Контактные данные</a></li>
+                        <li><a href="video.html">Видео</a></li>
+                    </ol>
+                </div>
+            </div>
 
             <h1><b>Аэрофлот &mdash; направления деятельности</b></h1>
 
@@ -203,12 +249,18 @@
                     <img src="pic5.jpg" height="300">
                 </div>
 
+                
+
             </div>
+
+            <button class="scroll-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
         </main>
 
         <footer> 
             
         </footer>
+
+        
 
     </body>
 </html>
