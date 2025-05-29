@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Видео о компании</title>
+        <link rel="stylesheet" href="menustyle.css">
+        <style>
+            body {
+                background-color: rgb(40, 79, 171);
+                margin: 0;
+                padding: 0;
+                color: white;
+            }
+            main {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: rgb(40, 79, 171);
+            }
+            h1 {
+                text-align: left;
+                color: white;
+                border-bottom: 1px solid white;
+                padding-bottom: 10px;
+                max-width: 900px;
+            }
+            h2 {
+                text-align: left;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+            header {
+                margin-left: 50px;
+                margin-top: 10px;
+            }
+            .video-container {
+                margin: 30px auto;
+                max-width: 900px;
+                text-align: center;
+            }
+            iframe {
+                border: 2px solid white;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+        </style>
+    </head>
+
+    <body>
+        <header> 
+            <div style="text-align: left;">
+                <img src="logo2.png" height="60">
+            </div>
+        </header>
+
+        <main>
+
+            <div class="menu">
+                <h1>Страницы сайта</h1>
+                <div class="spis">
+                    <ol>
+                        <li><a href="company.html">О компании</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="currency.html">Курс валют</a></li>
+                        <li><a href="contacts.html">Контактные данные</a></li>
+                        <li style="background-color: rgb(43, 150, 226);"><a href="video.html">Видео</a></li>
+                    </ol>
+                </div>
+            </div>
+
+
+            <h1>Видео о нашей компании</h1>
+
+            <div>
+                Посмотрите наше недавнее интервью с пилотессой нашей авиакомпании.
+            </div>
+
+            <div class="video-container">
+                <iframe 
+                    src="https://rutube.ru/play/embed/b0e394e606d70b617ffe8b5ab487686b" 
+                    width="800" 
+                    height="450" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </main>
+
+        <footer> 
+
+        </footer>
+    </body>
+</html>
