@@ -1,0 +1,277 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>О компании</title>
+        <link rel="stylesheet" href="menustyle.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <style>
+            body{
+                background-color: rgb(40, 79, 171);
+            }
+            main {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: rgb(40, 79, 171);
+                position: relative;
+            }
+
+            h1 {
+                text-align: left;
+                color: white;
+                border-bottom: 1px solid white;
+                padding-bottom: 10px;
+                max-width: 900px;
+            }
+
+            h2 {
+                text-align: left;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+
+            .company {
+                background-color: white;
+                max-width: 900px;
+                line-height: 1.6;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            .text {
+                margin-left: 30px;
+                margin-right: 30px;
+                margin-bottom: 30px;
+            }
+
+            header {
+                margin-left: 50px;
+                margin-top: 10px;
+            }
+
+            .list {
+                list-style-type: circle;
+            }
+
+            .scroll-top {
+                position: fixed;
+                bottom: 30px;
+                right: 270px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: #002d72;
+                color: white;
+                border: none;
+                font-size: 24px;
+                cursor: pointer;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease;
+                z-index: 999;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            }
+
+            .scroll-top.visible {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .scroll-top:hover {
+                background-color: #078ee2;
+                transform: translateY(-5px);
+                box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            }
+
+        </style>
+        
+     </head>
+
+
+    <body>
+        <header> 
+            <div style="text-align: left;">
+                <img src="logo2.png" height="60">
+            </div>
+        </header>
+
+        <main>
+
+            <div class="menu">
+                <h1>Страницы сайта</h1>
+                <div class="spis">
+                    <ol>
+                        <li style="background-color: rgb(43, 150, 226);"><a href="company.html">О компании</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="currency.html">Курс валют</a></li>
+                        <li><a href="contacts.html">Контактные данные</a></li>
+                        <li><a href="video.html">Видео</a></li>
+                    </ol>
+                </div>
+            </div>
+
+            <h1><b>Аэрофлот &mdash; направления деятельности</b></h1>
+
+            <div class="company">
+                <div class="text" style="margin-bottom: 5px;">
+                    <b><u>«Аэрофлот»</u></b> &mdash; крупнейшая авиакомпания России, 
+                    входящая в топ-20 мировых авиаперевозчиков. 
+                    Ее деятельность охватывает несколько ключевых направлений:
+                </div>
+                <ul class="list">
+                    <li>пассажирские авиаперевозки</li>
+                    <li>грузовые перевозки</li>
+                    <li>сервисные направления</li>
+                        <ul class="list">
+                            <li>IT-разработки</li>
+                            <li>обслуживание самолетов</li>
+                            <li>авиационная школа</li>
+                        </ul>
+                    <li>международное сотрудничество</li>
+                </ul>
+            </div>
+
+            <h1><b>Основатели</b></h1>
+
+            <div class="company">
+                <div class="text">
+                    <b><u>«Аэрофлот»</u></b> был создан советским правительством 
+                    как единая система гражданской авиации в <b>1923 году</b>.
+                </div>
+
+                <h2>Лица, участвовавшие в создании</h2>
+
+                <ul class="list">
+                    <li>Лев Троцкий</li>
+                    <li>Феликс Дзержинский</li>
+                    <li>Алексей Рыков</li>
+                    <li>Петр Баранов</li>
+                </ul>
+            </div>
+
+            <h1><b>История компании</b></h1>
+
+            <div class="company">
+
+                <h2>Основание и первые годы (1920–1930-е)</h2>
+
+                <div class="text">
+                    <b>9 февраля 1923 года</b> считается официальной датой создания 
+                    советской гражданской авиации. В этот день было учреждено 
+                    <b><i>Общество добровольного воздушного флота "Добролёт"</i></b>, 
+                    которое занималось грузовыми и пассажирскими перевозками.
+                </div>
+
+                <div class="text">
+                    Первый регулярный рейс состоялся <b>15 июля 1923 года</b> по маршруту 
+                    Москва — Нижний Новгород на самолёте <b><i>Junkers F.13</i></b>.
+                </div>
+
+                <div class="text">
+                    В <b>1930 году</b> "Добролёт" был объединён с другими авиапредприятиями 
+                    в Главное управление <b><i>Гражданского воздушного флота (ГУ ГВФ)</i></b>, а в 
+                    <b>1932 году</b> появилось название <b><i>"Аэрофлот"</i></b>.
+                </div>
+
+                <div style="text-align: center;">
+                    <img src="pic1.jpg" height="300">
+                </div>
+
+                <h2>Развитие в советский период (1940–1980-е)</h2>
+
+                <div class="text">
+                    В годы Великой Отечественной войны самолёты "Аэрофлота" 
+                    использовались для военных перевозок, эвакуации и доставки 
+                    грузов.
+                </div>
+
+                <div class="text">
+                    В <b>1956 году</b> "Аэрофлот" стал первой авиакомпанией в мире, 
+                    начавшей <b><i>регулярные реактивные пассажирские перевозки</i></b> 
+                    (на <b><i>Ту-104</i></b>).
+                </div>
+
+                <div class="text">
+                    В <b>1960–1980-е</b> компания активно расширяла маршрутную сеть, 
+                    включая международные направления (Европа, Азия, Америка, 
+                    Африка).
+                </div>
+
+                <div class="text">
+                    В <b>1970-е</b> "Аэрофлот" стал крупнейшей авиакомпанией мира по пассажиропотоку, 
+                    эксплуатируя такие самолёты, как <b><i>Ил-62, Ту-154, Ил-86</i></b>.
+                </div>
+
+                <div style="text-align: center;">
+                    <img src="pic2.jpg" width="45%">
+                    <img src="pic3.jpg" width="45%">
+                </div>
+
+                <h2>Кризис и реорганизация (1990-е)</h2>
+
+                <div class="text">
+                    После распада СССР в <b>1991 году</b> "Аэрофлот" перешёл под контроль России, 
+                    а многие региональные авиаотряды стали независимыми авиакомпаниями.
+                </div>
+
+                <div class="text">
+                    В <b>1990-е</b> из-за экономического кризиса парк сокращался, 
+                    но компания начала переход на западные самолёты (<b><i>Boeing, Airbus</i></b>).
+                </div>
+
+                <div style="text-align: center;">
+                    <img src="pic4.jpg" height="300">
+                </div>
+
+                <h2>Возрождение и современность (2000-е – настоящее время)</h2>
+
+                <div class="text">
+                    В <b>2000-е</b> "Аэрофлот" провёл масштабную модернизацию, обновив флот и сервис.
+                </div>
+
+                <div class="text">
+                    В <b>2006 году</b> вошёл в альянс <b><i>SkyTeam</i></b>, что расширило его международное присутствие.
+                </div>
+
+                <div class="text">
+                    В <b>2010-е</b> компания стала одним из лидеров по перевозкам в Европе, запустив лоукостер <b><i>"Победа"</i></b>.
+                </div>
+
+                <div class="text">
+                    В <b>2020-е</b>, несмотря на санкции и кризисы, "Аэрофлот" продолжает работу, 
+                    переориентируясь на азиатские рынки и российские самолёты (<b><i>МС-21, Сухой Superjet</i></b>).
+                </div>
+
+                <div style="text-align: center;">
+                    <img src="pic5.jpg" height="300">
+                </div>
+            </div>
+
+            <button class="scroll-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+        </main>
+
+        <footer> 
+            
+        </footer>
+
+        <script>
+
+            const scrollTopBtn = document.querySelector('.scroll-top');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollTopBtn.classList.add('visible');
+                } else {
+                    scrollTopBtn.classList.remove('visible');
+                }
+            });
+        </script>
+    </body>
+</html>
